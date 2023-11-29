@@ -125,7 +125,7 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" id="homeLink" class="nav-link px-2 text-secondary">Home</a></li>
+          <li><a href="#" id="HomeLink" class="nav-link px-2 text-secondary">Home</a></li>
           <li><a href="#" id="FeaturesLink" class="nav-link px-2 text-white">Features</a></li>
           <li><a href="#" id="PricingLink" class="nav-link px-2 text-white">Pricing</a></li>
           <li><a href="#" id="FAQsLink" class="nav-link px-2 text-white">FAQs</a></li>
@@ -142,6 +142,7 @@
         var PricingLink = document.getElementById('PricingLink');
         var FAQsLink = document.getElementById('FAQsLink');
         var AboutLink = document.getElementById('AboutLink');
+$(document).ready(function(){
 
         HomeLink.addEventListener('click', function(event) {
             
@@ -151,14 +152,13 @@
         });
 
  
-$(document).ready(function(){
-    FeaturesLink.addEventListener('click', function(event) {
+        FeaturesLink.addEventListener('click', function(event) {
             
             event.preventDefault();
             $("#modalInscription").modal("show")
 
         });
-});
+
      
         PricingLink.addEventListener('click', function(event) {
             
@@ -166,18 +166,22 @@ $(document).ready(function(){
 
             $("#modalInscription").modal("show")
         });
+
         FAQsLink.addEventListener('click', function(event) {
             
             event.preventDefault();
 
             $("#modalInscription").modal("show")
         });
+
         AboutLink.addEventListener('click', function(event) {
             
             event.preventDefault();
 
             $("#modalInscription").modal("show")
         });
+
+      });        
     </script>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
