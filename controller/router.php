@@ -3,12 +3,15 @@
 function route_request($address){
  
     if ($address === "/index"){
-        require_once './index.php';
-        /*var_dump($address);
-        echo "Index page loaded!";*/
+        require_once './index.php'; 
+    }
+    elseif($address === "/inscription"){
+        require_once './view/inscription.php';
+    }
+    elseif($address === "/produit"){
+        require_once './view/product.php';
     }
     else{
-        require_once './view/404.php';
-        //echo "404 page loaded!";
+        require_once './404.php';
     }    
-}
+};

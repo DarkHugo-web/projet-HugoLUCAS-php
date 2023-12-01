@@ -7,11 +7,11 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.118.2">
     <title>Mon site</title>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
-
+    <script src="https://kit.fontawesome.com/60bf04b953.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -108,6 +108,17 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+
+      #myCarousel {
+      background-color: black;
+      height : 500px;
+      }
+
+      .carousel-item {
+        height : 500px;
+      }
+
+     
     </style>
 
     
@@ -126,10 +137,8 @@
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="#" id="HomeLink" class="nav-link px-2 text-secondary">Home</a></li>
-          <li><a href="#" id="FeaturesLink" class="nav-link px-2 text-white">Features</a></li>
-          <li><a href="#" id="PricingLink" class="nav-link px-2 text-white">Pricing</a></li>
-          <li><a href="#" id="FAQsLink" class="nav-link px-2 text-white">FAQs</a></li>
-          <li><a href="#" id="AboutLink" class="nav-link px-2 text-white">About</a></li>
+          <li><a href="#" id="PricingLink" class="nav-link px-2 text-white">Product</a></li>
+          
         </ul>
 
 
@@ -150,31 +159,8 @@ $(document).ready(function(){
 
             $("#modalInscription").modal("show")
         });
-
- 
-        FeaturesLink.addEventListener('click', function(event) {
-            
-            event.preventDefault();
-            $("#modalInscription").modal("show")
-
-        });
-
      
         PricingLink.addEventListener('click', function(event) {
-            
-            event.preventDefault();
-
-            $("#modalInscription").modal("show")
-        });
-
-        FAQsLink.addEventListener('click', function(event) {
-            
-            event.preventDefault();
-
-            $("#modalInscription").modal("show")
-        });
-
-        AboutLink.addEventListener('click', function(event) {
             
             event.preventDefault();
 

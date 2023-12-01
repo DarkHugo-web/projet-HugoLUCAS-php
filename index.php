@@ -1,9 +1,10 @@
 <?php require_once 'view/main.php';?>
 <?php require_once 'view/header.php';?>
+
 <body>
 
 <?php require_once 'view/modal.php'?>
-
+<?php require_once 'view/carousel.php'?>
 </body>
 <?php require_once 'view/footer.php'?>
 

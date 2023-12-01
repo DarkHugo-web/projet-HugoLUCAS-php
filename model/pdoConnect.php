@@ -11,10 +11,7 @@ try{
     } 
 
 
-    $sql = "SELECT * FROM customer WHERE id=1";
-    $stmt = $pdo-> query($sql);
-    $data = $stmt->fetch();
-    var_dump($data);
+   
  
 /*$createTableQuery = "
     CREATE TABLE students (
