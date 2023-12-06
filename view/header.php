@@ -136,36 +136,34 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" id="HomeLink" class="nav-link px-2 text-secondary">Home</a></li>
-          <li><a href="#" id="PricingLink" class="nav-link px-2 text-white">Product</a></li>
+          <li><a href="/home" id="HomeLink" class="nav-link px-2 text-secondary">Home</a></li>
+          <li><a href="/produit" id="ProductLink" class="nav-link px-2 text-white">Product</a></li>
           
         </ul>
 
 
 
         <script>
-
-
         var HomeLink = document.getElementById('HomeLink');
-        var FeaturesLink = document.getElementById('FeaturesLink');
-        var PricingLink = document.getElementById('PricingLink');
-        var FAQsLink = document.getElementById('FAQsLink');
-        var AboutLink = document.getElementById('AboutLink');
+        var ProductLink = document.getElementById('PricingLink');
+      
 $(document).ready(function(){
 
-        HomeLink.addEventListener('click', function(event) {
+   
+
+        /*HomeLink.addEventListener('click', function(event) {
             
             event.preventDefault();
 
             $("#modalInscription").modal("show")
         });
      
-        PricingLink.addEventListener('click', function(event) {
+        ProductLink.addEventListener('click', function(event) {
             
             event.preventDefault();
 
             $("#modalInscription").modal("show")
-        });
+        });*/
 
       });        
     </script>
@@ -175,9 +173,14 @@ $(document).ready(function(){
         </form>
 
         <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-warning">Sign-up</button>
+        <?php if(!isset($_SESSION['nom'])) { ?>
+            <a href="/connexion"><button  id="login" type="button" class="btn btn-outline-light me-2">Login</button></a>
+            <a href="/inscription"><button id="SignUp" type="button" class="btn btn-warning">Sign-up</button></a>
         </div>
+        <?php } else { ?>
+            <?=@$_SESSION['prenom']?>
+              <a href="/exit"><button  id="login" type="button" class="btn btn-outline-light me-2">Se deconnecter</button></a>
+        <?php } ?>
       </div>
     </div>
   </header>

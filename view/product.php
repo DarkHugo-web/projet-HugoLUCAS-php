@@ -1,4 +1,7 @@
- <?php require_once './model/crud.php';
+ <?php
        require_once 'main.php'
     ?>
 
+<body>
+    
+</body>

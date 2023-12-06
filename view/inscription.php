@@ -7,10 +7,18 @@
   <div class="row justify-content-center">
     <div class="col-md-6">
       <h2 class="mb-4">Inscription</h2>
-      <form>
+      <form action="" method="post">
         <div class="form-group">
-          <label for="username">Nom d'utilisateur</label>
-          <input type="text" class="form-control" id="username" name="username" required>
+          <label for="username">Nom</label>
+          <input type="text" class="form-control" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+          <label for="username">Prénom</label>
+          <input type="text" class="form-control" id="prenom" name="prenom" required>
+        </div>
+        <div class="form-group">
+          <label for="username">Téléphone</label>
+          <input type="tel" class="form-control" id="tel" name="tel" required>
         </div>
         <div class="form-group">
           <label for="email">Adresse e-mail</label>
