@@ -25,6 +25,7 @@ function route_request($address){
     }
     elseif ($address === '/exit') {
         $_SESSION=array();
+        echo "<meta http-equiv='refresh' content='0;url=home'>";
     }
     else{
         require_once './view/404.php';

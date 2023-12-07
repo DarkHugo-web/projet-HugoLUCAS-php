@@ -1,7 +1,7 @@
 <?php require_once './model/CustomerModel.php';
 
 class customerInscriptionController{
-    private $model;
+    protected $model;
 
     public function __construct() {
         $this->model = new customer;
@@ -16,15 +16,16 @@ class customerInscriptionController{
             $tel = $_POST['tel'];
             $email = $_POST['email'];
             $mdp = password_hash($_POST['mdp'], PASSWORD_DEFAULT);
-            echo "<meta http-equiv='refresh' content='0';url='login'>"
+            if($this->model->setCustomer($nom,$prenom,$tel,$email,$mdp)){
+                echo "<meta http-equiv='refresh' content='0;url=connexion'>";
+            } else {
+                $this->getInscriptionForm();
+            }
+        } else {
+            $this->getInscriptionForm();
         }
-    
-    if($this->model->setCustomer($nom,$prenom,$tel,$email,$mdp))
-    {
-    } else {
-        $this->getInscriptionForm();
+    }
     }
 
-    }
-}
+
 
