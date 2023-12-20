@@ -4,7 +4,7 @@
       <li class="nav-item"><a href="/home" class="nav-link px-2 text-body-secondary text-white">Home</a></li>
       <li class="nav-item"><a href="/produit" class="nav-link px-2 text-body-secondary text-white">Product</a></li>
     </ul>
-    <p class="text-center text-body-secondary text-white">&copy; 2023 Company, Inc</p>
+    <p class="text-center text-body-secondary text-white">Use of Bootstrap - Hugo LUCAS</p>
   </footer>
 </div>
     
