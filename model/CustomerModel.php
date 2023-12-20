@@ -29,5 +29,19 @@ class customer {
             die("Error executing query: " . $e->getMessage());
         }
         }
+
     
+        public function deleteCustomerByEmail($parametres){
+            $deleteCustomer = $this->bdd->prepare("DELETE FROM customer WHERE email=:email");
+            try{
+                if (is_array($parametres)) {
+                    $deleteCustomer->execute($parametres);
+                    return true;
+                } else {
+                    return false;
+                }
+            } catch (PDOException $e) {
+                return false;
+            }
+        }
 }

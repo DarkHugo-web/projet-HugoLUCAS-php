@@ -1,5 +1,6 @@
 <!doctype html>
-<head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+<head>
+  <script src="/docs/5.3/assets/js/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -118,7 +119,9 @@
         height : 500px;
       }
 
-     
+
+
+
     </style>
 
     
@@ -141,45 +144,19 @@
           
         </ul>
 
-
-
-        <script>
-        var HomeLink = document.getElementById('HomeLink');
-        var ProductLink = document.getElementById('PricingLink');
-      
-$(document).ready(function(){
-
-   
-
-        /*HomeLink.addEventListener('click', function(event) {
-            
-            event.preventDefault();
-
-            $("#modalInscription").modal("show")
-        });
-     
-        ProductLink.addEventListener('click', function(event) {
-            
-            event.preventDefault();
-
-            $("#modalInscription").modal("show")
-        });*/
-
-      });        
-    </script>
-
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
           <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
         </form>
 
         <div class="text-end">
         <?php if(!isset($_SESSION['nom'])) { ?>
-            <a href="/connexion"><button  id="login" type="button" class="btn btn-outline-light me-2">Login</button></a>
-            <a href="/inscription"><button id="SignUp" type="button" class="btn btn-warning">Sign-up</button></a>
+            <a href="/connexion"><button  id="Login" type="button" class="btn btn-outline-light me-2">Connexion</button></a>
+            <a href="/inscription"><button id="SignUp" type="button" class="btn btn-primary">Inscription</button></a>
         </div>
         <?php } else { ?>
             <?=@$_SESSION['prenom']?>
-              <a href="/exit"><button  id="login" type="button" class="btn btn-outline-light me-2">Se deconnecter</button></a>
+            <a href="/profil"><button id="Profil" type="button" class="btn btn-primary">Profile</button></a>
+            <a href="/exit"><button  id="SignOut" type="button" class="btn btn-outline-light me-2">Deconnexion</button></a>
         <?php } ?>
       </div>
     </div>

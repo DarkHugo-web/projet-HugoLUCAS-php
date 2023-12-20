@@ -4,7 +4,7 @@ class customerInscriptionController{
     protected $model;
 
     public function __construct() {
-        $this->model = new customer;
+        $this->model = new customer();
     }
     public function getInscriptionForm() {
         require_once './view/inscription.php';
