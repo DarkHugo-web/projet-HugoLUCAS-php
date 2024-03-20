@@ -1,10 +1,6 @@
 <?php require_once 'view/header.php';?></br></br></br></br></br></br>
 <style>
-    body {
-            background-image: url('img/404.gif');
-            background-size: 100%;
-            background-repeat: no-repeat;
-        }
+    
 </style>
 
 <body class="mx-auto flex h-100 text-center text-bg-dark">

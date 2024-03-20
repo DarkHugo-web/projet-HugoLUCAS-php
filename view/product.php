@@ -38,7 +38,8 @@
                 <h2 class="text-white"><?= $produits['nom'] ?></h2>
                 <p class="text-white"><?= $produits['courteDescription'] ?></p>
                 <p class="text-white"><?= $produits['prix'] ?>€</p>    
-                <a href="/404"><button id="Commandez" type="button" class="btn btn-warning">Commandez</button></a>   
+                <a href="/404"><button id="Commandez" type="button" class="btn btn-primary">Commandez</button></a>
+                <a href="/404"><button id="Commandez" type="button" class="btn btn-primary">Détails</button></a>    
             </div> 
         </div></br>
 <?php } ?>            

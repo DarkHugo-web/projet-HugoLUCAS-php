@@ -3,9 +3,9 @@
 class myBDD {
     public static function connexion(){
         try{
-            $dsn = 'mysql:host=51.158.59.186;dbname=H.L;charset=utf8mb4;port=14301';
-            $username = 'phppex';
-            $password = 'Supermotdepasse!42';
+            $dsn = 'mysql:host=127.0.0.1;dbname=product;charset=utf8mb4;port=3306';
+            $username = 'root';
+            $password = '1234';
             $pdo = new PDO($dsn, $username, $password);
             return $pdo;
             echo "Connected successfully";

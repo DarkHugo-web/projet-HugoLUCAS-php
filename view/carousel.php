@@ -61,7 +61,7 @@
             <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>  
             <div class="container">
               <div class="carousel-caption">
-                <h1>Les Meilleurs objet magique</h1>
+                <h1>Les meilleurs objets magiques</h1>
                 <p>Allez voir les objets en ventes dans notre magasin en ligne</p>
                 <p><a class="btn btn-lg btn-primary" href="/produit">Allez voir</a></p>
               </div>
@@ -71,7 +71,7 @@
             <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
             <div class="container">
               <div class="carousel-caption text-end">
-                <h1>Allez à poudlard</h1>
+                <h1>Allez à Poudlard</h1>
                 <p>Allez voir les locaux de Poudlard</p>
                 <p><a class="btn btn-lg btn-primary" href="/404">Découvrir</a></p>
               </div>
@@ -92,19 +92,19 @@
             <div class="col-lg-4">
                 <svg id="item4" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
                 <h2 class="fw-normal text-white">Les maisons</h2>
-                <p class="text-white">Les maisons vous sont ouverte allez faire un tour pour découvrir à qu'elle maison vous appartenez.</p>
+                <p class="text-white">Les maisons vous sont ouvertes allez faire un tour pour découvrir à quelle maison vous appartenez.</p>
                 <p><a class="btn btn-secondary" href="https://www.wizardingworld.com/">Plus de détails</a></p>
             </div>
             <div  class="col-lg-4">
                 <svg id="item5" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-                <h2 class="fw-normal text-white">Le Lore</h2>
-                <p class="text-white">Allez vous renseignez sur l'histoire et le lore de Harry Potter</p>
+                <h2 class="fw-normal text-white">L'histoire</h2>
+                <p class="text-white">Allez-vous renseigner sur l'histoire d'Harry Potter</p>
                 <p><a class="btn btn-secondary" href="https://fr.wikipedia.org/wiki/Harry_Potter">Découvrir</a></p>
             </div>
             <div class="col-lg-4">
                 <svg id="item6" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
                 <h2 class="fw-normal text-white">Sortilège</h2>
-                <p class="text-white">Allez vous renseigner sur les sorts présent sur ce site</p>
+                <p class="text-white">Allez vous renseigner sur les sorts présents sur ce site</p>
                 <p><a class="btn btn-secondary" href="https://harrypotter.fandom.com/fr/wiki/Cat%C3%A9gorie:Sorts_par_nom">Voir détails</a></p>
             </div>
         </div>
